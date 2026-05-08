@@ -4,6 +4,8 @@ import { RegistrationForm } from "@/components/registration-form";
 import { EVENT_INFO } from "@/lib/constants";
 import { getSlots } from "@/services/booking-service";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const slots = await getSlots();
 
